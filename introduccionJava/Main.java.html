@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #717cb4; font-style: italic;}
+.s1 { color: #c3cee3;}
+.s2 { color: #c792ea; font-style: italic;}
+.s3 { color: #89ddff;}
+.s4 { color: #f78c6c;}
+.s5 { color: #c3e88d;}
+</style>
+</head>
+<body bgcolor="#0f111a">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">//Importa todos los paquetes que el proyecto necesita para ejecutarse</span>
+<span class="s0">//import java.until.*;</span>
+
+<span class="s0">//Java usa clases para poder ejecutar el código</span>
+ <span class="s2">public class </span><span class="s1">Main </span><span class="s3">{</span>
+     <span class="s0">//Modificadores de acceso en JAVA</span>
+    <span class="s0">//Void main= método principal de Java</span>
+    <span class="s2">public static void </span><span class="s1">main</span><span class="s3">(</span><span class="s1">String</span><span class="s3">[] </span><span class="s1">args</span><span class="s3">) { </span><span class="s0">//strings hace referencia a que ingresamos lista de objetos</span>
+
+        <span class="s0">//-----------Ejercicio de enteros-----------//</span>
+        <span class="s2">int </span><span class="s1">numero1 </span><span class="s3">= </span><span class="s4">5</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">numero2 </span><span class="s3">= </span><span class="s4">10</span><span class="s3">;</span>
+
+        <span class="s0">//Inicializar el proceso</span>
+        <span class="s2">int </span><span class="s1">suma </span><span class="s3">= </span><span class="s1">numero1</span><span class="s3">+</span><span class="s1">numero2</span><span class="s3">;</span>
+
+        <span class="s0">//Mostrar la impresión</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;La suma es: &quot; </span><span class="s3">+ </span><span class="s1">suma</span><span class="s3">);</span>
+
+        <span class="s0">//-----------Ejercicio de decimales-----------//</span>
+        <span class="s2">double </span><span class="s1">radio </span><span class="s3">= </span><span class="s4">5</span><span class="s3">;</span>
+
+        <span class="s0">//Inicializar el proceso</span>
+        <span class="s2">double </span><span class="s1">area </span><span class="s3">= </span><span class="s1">Math</span><span class="s3">.</span><span class="s1">PI </span><span class="s3">* </span><span class="s1">Math</span><span class="s3">.</span><span class="s1">pow</span><span class="s3">(</span><span class="s1">radio</span><span class="s3">,</span><span class="s4">2</span><span class="s3">);</span><span class="s0">//Math: para llamar funciones de matemáticas, pow: potencias</span>
+
+        <span class="s0">//Impresión por consola</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;El área del círculo es: &quot; </span><span class="s3">+ </span><span class="s1">area</span><span class="s3">);</span>
+
+        <span class="s0">//-----------Ejercicio de caracteres-----------//</span>
+
+        <span class="s2">char </span><span class="s1">letra </span><span class="s3">= </span><span class="s5">'A'</span><span class="s3">; </span><span class="s0">// char permite ingresar 1 solo elemento</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;La letra que se recibe es: &quot; </span><span class="s3">+ </span><span class="s1">letra</span><span class="s3">);</span>
+
+        <span class="s0">//-----------Ejercicio de Booleanos-----------//</span>
+
+        <span class="s2">int </span><span class="s1">num1 </span><span class="s3">= </span><span class="s4">7</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">num2 </span><span class="s3">= </span><span class="s4">7</span><span class="s3">;</span>
+        <span class="s2">boolean </span><span class="s1">sonIguales </span><span class="s3">= (</span><span class="s1">num1 </span><span class="s3">== </span><span class="s1">num2</span><span class="s3">);</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;Son iguales? &quot; </span><span class="s3">+ </span><span class="s1">sonIguales</span><span class="s3">);</span>
+
+        <span class="s0">//-----------Ejercicio de Cadenas de texto-----------//</span>
+
+        <span class="s1">String cadena1 </span><span class="s3">= </span><span class="s5">&quot;Bienvenido a: &quot;</span><span class="s3">;</span>
+        <span class="s1">String cadena2 </span><span class="s3">= </span><span class="s5">&quot;Desarrollo Backend en Java :) &quot;</span><span class="s3">;</span>
+        <span class="s1">String resultado </span><span class="s3">= </span><span class="s1">cadena1 </span><span class="s3">+ </span><span class="s1">cadena2</span><span class="s3">;</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s1">resultado</span><span class="s3">);</span>
+
+        <span class="s0">//-----------Ejercicio de condicionales-----------//</span>
+
+        <span class="s2">int </span><span class="s1">edad </span><span class="s3">= </span><span class="s4">14</span><span class="s3">;</span>
+        <span class="s2">if </span><span class="s3">(</span><span class="s1">edad</span><span class="s3">&gt;= </span><span class="s4">18</span><span class="s3">) {</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;Eres mayor de edad&quot;</span><span class="s3">);</span>
+        <span class="s3">} </span><span class="s2">else </span><span class="s3">{</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;Eres menor de edad, no puedes ingresar.&quot;</span><span class="s3">);</span>
+        <span class="s3">}</span>
+
+        <span class="s0">//-----------Taller de Tipos de Datos-----------//</span>
+
+        <span class="s0">//Declara dos variables numéricas (con el valor que desees), muestra por consola la suma, resta, multiplicación, división y módulo (resto de la división).</span>
+        <span class="s2">int </span><span class="s1">variable1 </span><span class="s3">= </span><span class="s4">5</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">variable2 </span><span class="s3">= </span><span class="s4">10</span><span class="s3">;</span>
+
+        <span class="s2">int </span><span class="s1">suma1 </span><span class="s3">= </span><span class="s1">variable1</span><span class="s3">+</span><span class="s1">variable2</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">resta1</span><span class="s3">= </span><span class="s1">variable1</span><span class="s3">-</span><span class="s1">variable2</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">multiplicación1</span><span class="s3">= </span><span class="s1">variable1</span><span class="s3">*</span><span class="s1">variable2</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">división1</span><span class="s3">= </span><span class="s1">variable1</span><span class="s3">/</span><span class="s1">variable2</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">módulo1</span><span class="s3">= </span><span class="s1">variable1</span><span class="s3">%</span><span class="s1">variable2</span><span class="s3">;</span>
+
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;La suma es: &quot;</span><span class="s3">+ </span><span class="s1">suma1 </span><span class="s3">+ </span><span class="s5">&quot; La resta es: &quot; </span><span class="s3">+ </span><span class="s1">resta1 </span><span class="s3">+ </span><span class="s5">&quot; La multiplicación es: &quot;</span><span class="s3">+ </span><span class="s1">multiplicación1 </span><span class="s3">+ </span><span class="s5">&quot; La división es: &quot; </span><span class="s3">+ </span><span class="s1">división1 </span><span class="s3">+ </span><span class="s5">&quot; El módulo es: &quot; </span><span class="s3">+ </span><span class="s1">módulo1</span><span class="s3">);</span>
+
+        <span class="s0">// Declara 2 variables numéricas (con el valor que desees), e indica cuál es mayor de los dos. Si son iguales indicarlo también. Vas cambiando los valores para comprobar que funciona.</span>
+
+        <span class="s2">int </span><span class="s1">caja1 </span><span class="s3">= </span><span class="s4">15</span><span class="s3">;</span>
+        <span class="s2">int </span><span class="s1">caja2 </span><span class="s3">= </span><span class="s4">10</span><span class="s3">;</span>
+
+        <span class="s2">if </span><span class="s3">(</span><span class="s1">caja1 </span><span class="s3">&gt; </span><span class="s1">caja2</span><span class="s3">) {</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s1">caja1 </span><span class="s3">+ </span><span class="s5">&quot; es mayor que &quot; </span><span class="s3">+ </span><span class="s1">caja2</span><span class="s3">);</span>
+        <span class="s3">} </span><span class="s2">else if </span><span class="s3">(</span><span class="s1">caja1 </span><span class="s3">&lt; </span><span class="s1">caja2</span><span class="s3">) {</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s1">caja1 </span><span class="s3">+ </span><span class="s5">&quot; es menor que &quot; </span><span class="s3">+ </span><span class="s1">caja2</span><span class="s3">);</span>
+        <span class="s3">} </span><span class="s2">else</span><span class="s3">{</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;Los números son iguales&quot;</span><span class="s3">);</span>
+        <span class="s3">}</span>
+
+        <span class="s0">//Declara un String que contenga tu nombre, después muestra un mensaje de bienvenida por consola. Por ejemplo: si introduzco «Fernando», me aparezca «Bienvenido Fernando».</span>
+
+        <span class="s1">String nombre </span><span class="s3">= </span><span class="s5">&quot;Laurie&quot;</span><span class="s3">;</span>
+                <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s5">&quot;Hola, &quot; </span><span class="s3">+ </span><span class="s1">nombre</span><span class="s3">);</span>
+    <span class="s3">}</span>
+<span class="s3">}</span></pre>
+</body>
+</html>
